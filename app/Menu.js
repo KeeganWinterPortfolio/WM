@@ -8,7 +8,15 @@ export default function Menu({ mainMenu }) {
   return (
     <>
       {mainMenu && (
-        <motion.div className="absolute bg-black border-t border-r border-neutral-600 h-full mt-12 w-32 z-20">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            duration: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="absolute bg-black border-t border-r border-neutral-600 h-full mt-12 w-32 z-20"
+        >
           <ul>
             <motion.li
               initial={{ opacity: 0, x: -100 }}
