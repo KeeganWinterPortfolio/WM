@@ -3,12 +3,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { GiDoubleDragon } from "react-icons/Gi";
+import { GiDoubleDragon } from "react-icons/gi";
 import { BsFillHouseFill } from "react-icons/bs";
 import { BsChevronDoubleRight } from "react-icons/bs";
-import { GiBeastEye } from "react-icons/Gi";
-import { GiGhost } from "react-icons/Gi";
-import { GiFairyWings } from "react-icons/Gi";
+import { GiBeastEye } from "react-icons/gi";
+import { GiGhost } from "react-icons/gi";
+import { GiFairyWings } from "react-icons/gi";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 
