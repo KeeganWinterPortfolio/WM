@@ -9,7 +9,7 @@ export default function Menu() {
   const [mainMenu, setMainMenu] = useState(false);
 
   return (
-    <motion.div className="absolute bg-transparent border-r border-neutral-800 h-full mt-12 w-32 z-20">
+    <motion.div className="absolute bg-gradient-to-r from-black border-t border-r border-neutral-800 h-full mt-12 w-32 z-20">
       <ul>
         <li className="flex text-neutral-500 items-center hover:bg-neutral-900  hover:border-r-emerald-400 hover:border-r hover:text-neutral-200 w-32  text-sm">
           <Link href="#" className="py-3 px-3">

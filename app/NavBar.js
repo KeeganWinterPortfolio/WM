@@ -9,7 +9,7 @@ import PortfolioButton from "./PortfolioButton";
 function NavBar() {
   return (
     <>
-      <nav className="w-screen flex justify-between items-center top-0 bg-transparent border-b border-neutral-800 absolute z-20">
+      <nav className="w-screen flex justify-between items-center top-0 bg-gradient-to-b from-black border-b border-neutral-800 absolute z-20">
         <div className="flex">
           <h1 className="border-r border-neutral-800 w-32 px-4 font-bold text-neutral-300 py-3">
             WMyth
