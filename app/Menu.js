@@ -11,6 +11,10 @@ import { GiGhost } from "react-icons/gi";
 import { GiFairyWings } from "react-icons/gi";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
+import SpiritMenu from "./SpiritMenu";
+import DragonMenu from "./DragonMenu";
+import BeastMenu from "./BeastMenu";
+import FairyMenu from "./FairyMenu";
 
 export default function Menu({ mainMenu, mainMenuToggle }) {
   const [extendedMenu, setExtendedMenu] = useState(false);
@@ -27,6 +31,38 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
     setExtendedMenu(false);
     setStopper(true);
   }
+
+  // Functions For Extended Menu
+
+  const [dragonMenu, setDragonMenu] = useState(false);
+  const [beastMenu, setBeastMenu] = useState(false);
+  const [spiritMenu, setSpiritMenu] = useState(false);
+  const [fairyMenu, setFairyMenu] = useState(false);
+
+  const dragonMenuToggle = () => {
+    setDragonMenu((dragonMenu) => !dragonMenu);
+    setBeastMenu(false);
+    setSpiritMenu(false);
+    setFairyMenu(false);
+  };
+  const beastMenuToggle = () => {
+    setDragonMenu(false);
+    setBeastMenu((beastMenu) => !beastMenu);
+    setSpiritMenu(false);
+    setFairyMenu(false);
+  };
+  const spiritMenuToggle = () => {
+    setDragonMenu(false);
+    setBeastMenu(false);
+    setSpiritMenu((spiritMenu) => !spiritMenu);
+    setFairyMenu(false);
+  };
+  const fairyMenuToggle = () => {
+    setDragonMenu(false);
+    setBeastMenu(false);
+    setSpiritMenu(false);
+    setFairyMenu((fairyMenu) => !fairyMenu);
+  };
 
   return (
     <>
@@ -127,7 +163,7 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                     ease: [0, 0.71, 0.2, 1.01],
                     delay: 0.6,
                   }}
-                  onClick={mainMenuToggle}
+                  onClick={extendedMenu ? dragonMenuToggle : mainMenuToggle}
                   className="flex text-neutral-300 items-center hover:bg-neutral-900  hover:text-neutral-100 w-auto bg-black rounded-lg  text-xl"
                 >
                   <Link href="/Dragons" className="py-3 px-3 flex w-auto">
@@ -158,7 +194,7 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                     ease: [0, 0.71, 0.2, 1.01],
                     delay: 0.7,
                   }}
-                  onClick={mainMenuToggle}
+                  onClick={extendedMenu ? beastMenuToggle : mainMenuToggle}
                   className="flex text-neutral-300 items-center hover:bg-neutral-900  hover:text-neutral-100 w-auto bg-black rounded-lg text-xl"
                 >
                   <Link href="/Beasts" className="py-3 px-3 flex w-auto">
@@ -189,10 +225,10 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                     ease: [0, 0.71, 0.2, 1.01],
                     delay: 0.8,
                   }}
-                  onClick={mainMenuToggle}
+                  onClick={extendedMenu ? spiritMenuToggle : mainMenuToggle}
                   className="flex text-neutral-300 items-center hover:bg-neutral-900  hover:text-neutral-100 w-auto bg-black rounded-lg text-xl"
                 >
-                  <Link href="/Ghosts" className="py-3 px-3 flex w-auto">
+                  <Link href="/Spirits" className="py-3 px-3 flex w-auto">
                     <GiGhost />
                     {extendedMenu && (
                       <motion.span
@@ -206,7 +242,7 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                         }}
                         className="text-sm text-center ml-2"
                       >
-                        Ghosts
+                        Spirits
                       </motion.span>
                     )}
                   </Link>
@@ -220,7 +256,7 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                     ease: [0, 0.71, 0.2, 1.01],
                     delay: 0.9,
                   }}
-                  onClick={mainMenuToggle}
+                  onClick={extendedMenu ? fairyMenuToggle : mainMenuToggle}
                   className="flex text-neutral-300 items-center hover:bg-neutral-900  hover:text-neutral-100 w-auto bg-black rounded-lg text-xl"
                 >
                   <Link href="/Fairies" className="py-3 px-3 flex w-auto">
@@ -256,8 +292,8 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
           >
             {/* Overlay */}
             <motion.div
-              initial={{ opacity: 0.5, x: -100 }}
-              animate={{ opacity: 0.5, x: 0 }}
+              initial={{ opacity: 0.7, x: -100 }}
+              animate={{ opacity: 0.7, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
               transition={{
                 duration: 0.75,
@@ -266,6 +302,22 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
               layout
               className="h-full bg-black opacity-50 w-full absolute"
             ></motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -100 }}
+              transition={{
+                duration: 0.75,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+              layout
+              className="w-full h-full absolute overflow-y-scroll overflow-x-hidden  flex justify-end"
+            >
+              {dragonMenu && <DragonMenu />}
+              {beastMenu && <BeastMenu />}
+              {spiritMenu && <SpiritMenu />}
+              {fairyMenu && <FairyMenu />}
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

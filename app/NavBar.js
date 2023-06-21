@@ -25,7 +25,7 @@ function NavBar() {
           >
             WMyth
           </Link>
-          <MenuButton onClick={mainMenuToggle} />
+          <MenuButton mainMenu={mainMenu} onClick={mainMenuToggle} />
           <AboutUsButton />
         </div>
         <PortfolioButton />
