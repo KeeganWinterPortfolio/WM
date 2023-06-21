@@ -288,19 +288,20 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
         {extendedMenu && (
           <motion.div
             layout
-            className="absolute z-20 xl:w:1/4 lg:w-1/3 sm:w-1/2 w-2/3 h-full top-12 left-20"
+            style={{ left: "138px" }}
+            className="absolute z-20 max-w-xl w-1/2 sm:w-2:3 h-full top-12"
           >
             {/* Overlay */}
             <motion.div
-              initial={{ opacity: 0.7, x: -100 }}
-              animate={{ opacity: 0.7, x: 0 }}
+              initial={{ opacity: 1, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
               transition={{
                 duration: 0.75,
                 ease: [0, 0.71, 0.2, 1.01],
               }}
               layout
-              className="h-full bg-black opacity-50 w-full absolute"
+              className="h-full bg-neutral-950 opacity-50 w-full absolute"
             ></motion.div>
             <motion.div
               initial={{ opacity: 0, x: -100 }}
@@ -311,7 +312,7 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
               layout
-              className="w-full h-full absolute overflow-y-scroll overflow-x-hidden  flex justify-end"
+              className="w-full h-full absolute overflow-y-scroll overflow-x-hidden flex justify-end"
             >
               {dragonMenu && <DragonMenu />}
               {beastMenu && <BeastMenu />}

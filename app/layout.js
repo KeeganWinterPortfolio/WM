@@ -1,8 +1,8 @@
 import NavBar from "./NavBar";
 import "./globals.css";
-import { Courgette } from "next/font/google";
+import { Cardo } from "next/font/google";
 
-const courgette = Courgette({ subsets: ["latin"], weight: ["400"] });
+const cardo = Cardo({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata = {
   title: "Welsh Mythology",
@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="relative">
-      <body style={{ background: "#000000" }} className={courgette.className}>
+      <body style={{ background: "#000000" }} className={cardo.className}>
         <NavBar />
         {children}
       </body>
