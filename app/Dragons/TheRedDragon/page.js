@@ -1,9 +1,8 @@
-import MainImageWM from "../../public/images/MainImageWM.png";
-import MainImageWMLarge from "../../public/images/MainImageWMLarge.png";
-import MainImageWMMedium from "../../public/images/MainImageWMMedium.png";
+import MainImageWM from "../../../public/images/MainImageWM.png";
+import MainImageWMLarge from "../../../public/images/MainImageWMLarge.png";
+import MainImageWMMedium from "../../../public/images/MainImageWMMedium.png";
 import Image from "next/image";
 import { Sora } from "next/font/google";
-import CardContainer from "./CardContainer";
 
 const sora = Sora({ subsets: ["latin"], weight: ["800"] });
 
@@ -57,18 +56,15 @@ export default function Home() {
         <div className="text-neutral-200 sm:text-neutral-300 sm:opacity-100 sm:text-6xl text-4xl font-bold">
           {/* 1st Part Heading */}
           <div className="max-w-md ">
-            <h1 className={sora.className}>
-              Discover<br></br> The World of{" "}
-            </h1>
+            <h1 className={sora.className}>Y Ddraig Goch </h1>
           </div>
           {/* Floating Buttons */}
           {/* 2nd Part Heading */}
-          <div className="mt-52 sm:mt-0 text-emerald-700">
-            <h2 className={sora.className}>Welsh Mythology</h2>
+          <div className="mt-52 sm:mt-5 text-emerald-700">
+            <h2 className={sora.className}>The Red Dragon</h2>
           </div>
         </div>
       </div>
-      <CardContainer />
     </div>
   );
 }

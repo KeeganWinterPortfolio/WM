@@ -8,7 +8,7 @@ function CardContainer() {
     <div className="w-full h-full flex justify-center items-center">
       <ul className="flex flex-wrap justify-center w-full h-full px-2 py-2">
         {/* Dragon Card */}
-        <Link href="/Dragons">
+        <Link href="Dragons/TheRedDragon">
           <li className="relative max-w-sm p-3 flex justify-center items-center shrink-0">
             <Image
               src={MainImageWMDragonCard}

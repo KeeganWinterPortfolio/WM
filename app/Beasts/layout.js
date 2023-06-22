@@ -1,4 +1,4 @@
-import NavBar from "./NavBar";
+import NavBar from "../NavBar";
 
 import { Cardo } from "next/font/google";
 
