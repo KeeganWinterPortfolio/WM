@@ -34,34 +34,34 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
 
   // Functions For Extended Menu
 
-  const [dragonMenu, setDragonMenu] = useState(false);
+  const [dragonMenu, setDragonMenu] = useState(true);
   const [beastMenu, setBeastMenu] = useState(false);
   const [spiritMenu, setSpiritMenu] = useState(false);
   const [fairyMenu, setFairyMenu] = useState(false);
 
   const dragonMenuToggle = () => {
-    setDragonMenu((dragonMenu) => !dragonMenu);
+    setDragonMenu(true);
     setBeastMenu(false);
     setSpiritMenu(false);
     setFairyMenu(false);
   };
   const beastMenuToggle = () => {
     setDragonMenu(false);
-    setBeastMenu((beastMenu) => !beastMenu);
+    setBeastMenu(true);
     setSpiritMenu(false);
     setFairyMenu(false);
   };
   const spiritMenuToggle = () => {
     setDragonMenu(false);
     setBeastMenu(false);
-    setSpiritMenu((spiritMenu) => !spiritMenu);
+    setSpiritMenu(true);
     setFairyMenu(false);
   };
   const fairyMenuToggle = () => {
     setDragonMenu(false);
     setBeastMenu(false);
     setSpiritMenu(false);
-    setFairyMenu((fairyMenu) => !fairyMenu);
+    setFairyMenu(true);
   };
 
   return (
@@ -312,7 +312,7 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
               layout
-              className="w-full h-full absolute overflow-y-scroll overflow-x-hidden flex justify-end"
+              className="w-full h-full absolute overflow-y-scroll overflow-x-hidden flex justify-end scrollbar-track-emerald-900 scrollbar-thumb-emerald-600"
             >
               {dragonMenu && <DragonMenu />}
               {beastMenu && <BeastMenu />}

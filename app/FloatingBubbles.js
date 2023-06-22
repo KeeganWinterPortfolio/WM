@@ -55,7 +55,7 @@ function FloatingBubbles() {
         style={{
           boxShadow: "0px 0px 12px #10b981",
         }}
-        className="w-2 h-2 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-16 left-44 shadow text-black flex justify-center items-center text-2xl"
+        className="w-2 h-2 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-12 left-44 shadow text-black flex justify-center items-center text-2xl"
       ></motion.div>
       <motion.div
         initial="initial"
@@ -64,7 +64,7 @@ function FloatingBubbles() {
         style={{
           boxShadow: "0px 0px 12px #10b981",
         }}
-        className=" w-3 h-3 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-28 left-28 shadow text-black flex justify-center items-center"
+        className=" w-3 h-3 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-28 left-32 shadow text-black flex justify-center items-center"
       ></motion.div>
       <motion.div
         initial="initial"
@@ -73,7 +73,7 @@ function FloatingBubbles() {
         style={{
           boxShadow: "0px 0px 12px #10b981",
         }}
-        className=" w-2 h-2 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-40 left-6 shadow text-black flex justify-center items-center"
+        className=" w-2 h-2 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-36 left-6 shadow text-black flex justify-center items-center"
       ></motion.div>
       <motion.div
         initial="initial"
@@ -82,7 +82,7 @@ function FloatingBubbles() {
         style={{
           boxShadow: "0px 0px 12px #10b981",
         }}
-        className="w-5 h-5 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-10 left-8 shadow text-black flex justify-center items-center"
+        className="w-5 h-5 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-6 left-8 shadow text-black flex justify-center items-center"
       ></motion.div>
       <motion.div
         initial="initial"
@@ -91,7 +91,7 @@ function FloatingBubbles() {
         style={{
           boxShadow: "0px 0px 12px #10b981",
         }}
-        className=" w-4 h-4 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-40 left-56 shadow text-black"
+        className=" w-4 h-4 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-40 left-60 shadow text-black"
       ></motion.div>
     </div>
   );

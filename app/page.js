@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Sora } from "next/font/google";
 import FloatingButtonDiv from "./FloatingButtonDiv";
 import FloatingBubbles from "./FloatingBubbles";
+import CardContainer from "./CardContainer";
 
 const sora = Sora({ subsets: ["latin"], weight: ["800"] });
 
@@ -31,7 +32,7 @@ export default function Home() {
           {/* Image */}
           <Image src={MainImageWMMedium} alt="" className="" />
           {/* Left Border Black Gradient */}
-          <div className="w-full h-full absolute  top-0 bg-black opacity-40"></div>
+          <div className="w-full h-full absolute  top-0 bg-black opacity-60"></div>
           {/* Left Border Black Gradient */}
           <div className="w-1/3 h-full absolute left-0 top-0 bg-gradient-to-r from-black"></div>
           {/* Bottom Border Black Gradient */}
@@ -53,11 +54,11 @@ export default function Home() {
         </div>
       </div>
       {/* Small Image And Overlay End */}
-      {/* Content */}
-      <div className="absolute h-auto pt-12  sm:text-start w-full px-4 pb-4">
+      {/* Content Small */}
+      <div className="absolute h-auto pt-12  text-start w-full px-4 pb-4 sm:hidden flex">
         <div className="text-neutral-200 sm:text-neutral-300 sm:opacity-100 sm:text-6xl text-4xl font-bold">
           {/* 1st Part Heading */}
-          <div className="max-w-xs sm:max-w-md ">
+          <div className="max-w-xs">
             <h1 className={sora.className}>
               Discover<br></br> The World of{" "}
             </h1>
@@ -65,12 +66,29 @@ export default function Home() {
           <FloatingBubbles />
           {/* Floating Buttons */}
           {/* 2nd Part Heading */}
-          <div className="mt-52 sm:mt-0 text-emerald-700">
+          <div className="mt-10 text-emerald-700">
             <h2 className={sora.className}>Welsh Mythology</h2>
           </div>
           <FloatingButtonDiv />
         </div>
       </div>
+      {/* Content Container Large */}
+      <div className="absolute h-auto pt-12  text-start w-full px-4 pb-4 hidden sm:flex">
+        <div className="text-neutral-200 sm:text-neutral-300 sm:opacity-100 sm:text-6xl text-4xl font-bold">
+          {/* 1st Part Heading */}
+          <div className="max-w-md ">
+            <h1 className={sora.className}>
+              Discover<br></br> The World of{" "}
+            </h1>
+          </div>
+          {/* Floating Buttons */}
+          {/* 2nd Part Heading */}
+          <div className="mt-52 sm:mt-0 text-emerald-700">
+            <h2 className={sora.className}>Welsh Mythology</h2>
+          </div>
+        </div>
+      </div>
+      <CardContainer />
     </main>
   );
 }

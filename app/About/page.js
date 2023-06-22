@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center space-y-6 z-10">
+    <div className="flex flex-col items-center space-y-6 z-10">
       {/* Large Image And Overlay Start */}
       <div className="w-full hidden justify-end xl:flex">
         <div className="w-auto relative">
@@ -49,6 +49,6 @@ export default function Home() {
       </div>
       {/* Small Image And Overlay End */}
       <h1>About</h1>
-    </main>
+    </div>
   );
 }

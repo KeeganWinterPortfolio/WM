@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import MainImageWMDragonCard from "../public/images/MainImageWMDragonCard.png";
+import MainImageWMDragonCard from "../../public/images/MainImageWMDragonCard.png";
 import Link from "next/link";
 
 function CardContainer() {
