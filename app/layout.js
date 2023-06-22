@@ -14,7 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className="relative">
       <body style={{ background: "#000000" }} className={cardo.className}>
         <NavBar />
-        {children}
+        <div className="w-full h-full overflow-y-scroll overflow-x-hidden">
+          {children}
+        </div>
       </body>
     </html>
   );

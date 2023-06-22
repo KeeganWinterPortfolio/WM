@@ -10,7 +10,7 @@ export default function Home() {
       <div className="w-full hidden justify-end xl:flex">
         <div className="w-auto relative">
           {/* Image */}
-          <Image src={MainImageWMLarge} alt="" className="" />
+          <Image src={MainImageWMLarge} alt="" className="mt-6" />
           {/* Left Border Black Gradient */}
           <div className="w-full h-full absolute  top-0 bg-black opacity-40"></div>
           {/* Left Border Black Gradient */}

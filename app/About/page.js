@@ -38,7 +38,7 @@ export default function Home() {
       <div className="w-full flex justify-end lg:hidden">
         <div className="w-auto relative">
           {/* Image */}
-          <Image src={MainImageWM} alt="" className="" />
+          <Image src={MainImageWM} alt="" className="mt-6" />
           {/* Left Border Black Gradient */}
           <div className="w-full h-full absolute  top-0 bg-black opacity-30"></div>
           {/* Left Border Black Gradient */}
