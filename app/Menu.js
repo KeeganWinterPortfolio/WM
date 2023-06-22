@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { GiDoubleDragon } from "react-icons/gi";
+import { GiDragonHead } from "react-icons/gi";
 import { BsFillHouseFill } from "react-icons/bs";
 import { BsChevronDoubleRight } from "react-icons/bs";
 import { GiBeastEye } from "react-icons/gi";
@@ -167,7 +167,7 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                   className="flex text-neutral-300 items-center hover:bg-neutral-900  hover:text-neutral-100 w-auto bg-black rounded-lg  text-xl"
                 >
                   <Link href="/Dragons" className="py-3 px-3 flex w-auto">
-                    <GiDoubleDragon />
+                    <GiDragonHead />
                     {extendedMenu && (
                       <motion.span
                         initial={{ width: 0 }}

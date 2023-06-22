@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  GiDoubleDragon,
+  GiDragonHead,
   GiBeastEye,
   GiGhost,
   GiFairyWings,
@@ -56,50 +56,58 @@ function FloatingButtonDiv() {
 
   return (
     <div className="w-full h-full relative text-lg">
-      <motion.a
-        initial="initial"
-        animate="variant1"
-        variants={containerVariants}
-        style={{
-          boxShadow: "0px 0px 12px #10b981",
-        }}
-        className="p-3 w-16 h-16 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-36 left-52 shadow text-black flex justify-center items-center text-2xl"
-      >
-        <GiDoubleDragon />
-      </motion.a>
-      <motion.a
-        initial="initial"
-        animate="variant2"
-        variants={containerVariants}
-        style={{
-          boxShadow: "0px 0px 12px #10b981",
-        }}
-        className="p-3 w-14 h-14 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-12 left-24 shadow text-black flex justify-center items-center"
-      >
-        <GiBeastEye />
-      </motion.a>
-      <motion.a
-        initial="initial"
-        animate="variant3"
-        variants={containerVariants}
-        style={{
-          boxShadow: "0px 0px 12px #10b981",
-        }}
-        className="p-3 w-12 h-12 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-36 left-8 shadow text-black flex justify-center items-center"
-      >
-        <GiFairyWings />
-      </motion.a>
-      <motion.a
-        initial="initial"
-        animate="variant4"
-        variants={containerVariants}
-        style={{
-          boxShadow: "0px 0px 12px #10b981",
-        }}
-        className="p-3 w-10 h-10 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-10 left-60 shadow text-black flex justify-center items-center"
-      >
-        <GiGhost />
-      </motion.a>
+      <Link href="/Dragons">
+        <motion.div
+          initial="initial"
+          animate="variant1"
+          variants={containerVariants}
+          style={{
+            boxShadow: "0px 0px 12px #10b981",
+          }}
+          className="p-3 w-16 h-16 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-36 left-52 shadow text-black flex justify-center items-center text-3xl"
+        >
+          <GiDragonHead />
+        </motion.div>
+      </Link>
+      <Link href="/Beasts">
+        <motion.div
+          initial="initial"
+          animate="variant2"
+          variants={containerVariants}
+          style={{
+            boxShadow: "0px 0px 12px #10b981",
+          }}
+          className="p-3 w-14 h-14 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-12 left-24 shadow text-black flex justify-center items-center text-2xl"
+        >
+          <GiBeastEye />
+        </motion.div>
+      </Link>
+      <Link href="/Fairies">
+        <motion.div
+          initial="initial"
+          animate="variant3"
+          variants={containerVariants}
+          style={{
+            boxShadow: "0px 0px 12px #10b981",
+          }}
+          className="p-3 w-12 h-12 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-36 left-8 shadow text-black flex justify-center items-center text-xl"
+        >
+          <GiFairyWings />
+        </motion.div>
+      </Link>
+      <Link href="/Spirits">
+        <motion.div
+          initial="initial"
+          animate="variant4"
+          variants={containerVariants}
+          style={{
+            boxShadow: "0px 0px 12px #10b981",
+          }}
+          className="p-3 w-12 h-12 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-10 left-60 shadow text-black flex justify-center items-center text-xl"
+        >
+          <GiGhost />
+        </motion.div>
+      </Link>
     </div>
   );
 }
