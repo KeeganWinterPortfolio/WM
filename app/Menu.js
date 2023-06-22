@@ -164,11 +164,18 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                     delay: 0.6,
                   }}
                   onClick={extendedMenu ? dragonMenuToggle : mainMenuToggle}
-                  className="flex text-neutral-300 items-center hover:bg-neutral-900  hover:text-neutral-100 w-auto bg-black rounded-lg  text-xl"
+                  className="flex text-neutral-300 items-center hover:bg-neutral-900  hover:text-neutral-100 w-auto bg-black rounded-lg  text-xl cursor-pointer"
                 >
-                  <Link href="/Dragons" className="py-3 px-3 flex w-auto">
-                    <GiDragonHead />
-                    {extendedMenu && (
+                  {!extendedMenu && (
+                    <Link href="/Dragons" className="py-3 px-3 flex w-auto">
+                      <GiDragonHead />
+                    </Link>
+                  )}
+                  {extendedMenu && (
+                    <>
+                      <div href="/Dragons" className="py-3 pl-3 flex w-auto">
+                        <GiDragonHead />
+                      </div>
                       <motion.span
                         initial={{ width: 0 }}
                         animate={{
@@ -178,12 +185,12 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                           duration: 0.3,
                           ease: [0, 0.71, 0.2, 1.01],
                         }}
-                        className="text-sm text-center ml-2"
+                        className="text-sm text-center mx-2"
                       >
                         Dragons
                       </motion.span>
-                    )}
-                  </Link>
+                    </>
+                  )}
                 </motion.li>
                 {/* Beast Button */}
                 <motion.li
@@ -195,11 +202,18 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                     delay: 0.7,
                   }}
                   onClick={extendedMenu ? beastMenuToggle : mainMenuToggle}
-                  className="flex text-neutral-300 items-center hover:bg-neutral-900  hover:text-neutral-100 w-auto bg-black rounded-lg text-xl"
+                  className="flex text-neutral-300 items-center hover:bg-neutral-900  hover:text-neutral-100 w-auto bg-black rounded-lg text-xl cursor-pointer"
                 >
-                  <Link href="/Beasts" className="py-3 px-3 flex w-auto">
-                    <GiBeastEye />
-                    {extendedMenu && (
+                  {!extendedMenu && (
+                    <Link href="/Beasts" className="py-3 px-3 flex w-auto">
+                      <GiBeastEye />
+                    </Link>
+                  )}
+                  {extendedMenu && (
+                    <>
+                      <div href="/Beasts" className="py-3 pl-3 flex w-auto">
+                        <GiBeastEye />
+                      </div>
                       <motion.span
                         initial={{ width: 0 }}
                         animate={{
@@ -209,12 +223,12 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                           duration: 0.3,
                           ease: [0, 0.71, 0.2, 1.01],
                         }}
-                        className="text-sm text-center ml-2"
+                        className="text-sm text-center mx-2"
                       >
                         Beasts
                       </motion.span>
-                    )}
-                  </Link>
+                    </>
+                  )}
                 </motion.li>
                 {/* Ghost Button */}
                 <motion.li
@@ -226,11 +240,18 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                     delay: 0.8,
                   }}
                   onClick={extendedMenu ? spiritMenuToggle : mainMenuToggle}
-                  className="flex text-neutral-300 items-center hover:bg-neutral-900  hover:text-neutral-100 w-auto bg-black rounded-lg text-xl"
+                  className="flex text-neutral-300 items-center hover:bg-neutral-900  hover:text-neutral-100 w-auto bg-black rounded-lg text-xl cursor-pointer"
                 >
-                  <Link href="/Spirits" className="py-3 px-3 flex w-auto">
-                    <GiGhost />
-                    {extendedMenu && (
+                  {!extendedMenu && (
+                    <Link href="/Spirits" className="py-3 px-3 flex w-auto">
+                      <GiGhost />
+                    </Link>
+                  )}
+                  {extendedMenu && (
+                    <>
+                      <div href="/Spirits" className="py-3 pl-3 flex w-auto">
+                        <GiGhost />
+                      </div>
                       <motion.span
                         initial={{ width: 0 }}
                         animate={{
@@ -240,12 +261,12 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                           duration: 0.3,
                           ease: [0, 0.71, 0.2, 1.01],
                         }}
-                        className="text-sm text-center ml-2"
+                        className="text-sm text-center mx-2"
                       >
                         Spirits
                       </motion.span>
-                    )}
-                  </Link>
+                    </>
+                  )}
                 </motion.li>
                 {/* Fairy Button */}
                 <motion.li
@@ -257,11 +278,18 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                     delay: 0.9,
                   }}
                   onClick={extendedMenu ? fairyMenuToggle : mainMenuToggle}
-                  className="flex text-neutral-300 items-center hover:bg-neutral-900  hover:text-neutral-100 w-auto bg-black rounded-lg text-xl"
+                  className="flex text-neutral-300 items-center hover:bg-neutral-900  hover:text-neutral-100 w-auto bg-black rounded-lg text-xl cursor-pointer"
                 >
-                  <Link href="/Fairies" className="py-3 px-3 flex w-auto">
-                    <GiFairyWings />
-                    {extendedMenu && (
+                  {!extendedMenu && (
+                    <Link href="/Fairies" className="py-3 px-3 flex w-auto">
+                      <GiFairyWings />
+                    </Link>
+                  )}
+                  {extendedMenu && (
+                    <>
+                      <div href="/Fairies" className="py-3 pl-3 flex w-auto">
+                        <GiFairyWings />
+                      </div>
                       <motion.span
                         initial={{ width: 0 }}
                         animate={{
@@ -271,12 +299,12 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                           duration: 0.3,
                           ease: [0, 0.71, 0.2, 1.01],
                         }}
-                        className="text-sm text-center ml-2"
+                        className="text-sm text-center mx-2"
                       >
                         Fairies
                       </motion.span>
-                    )}
-                  </Link>
+                    </>
+                  )}
                 </motion.li>
               </motion.ul>
             </ul>
