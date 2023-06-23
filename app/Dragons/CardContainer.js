@@ -8,8 +8,23 @@ import { motion } from "framer-motion";
 
 function CardContainer() {
   return (
-    <div className="w-full h-full flex justify-center items-center">
-      <ul className="flex flex-wrap justify-center w-full h-full py-20 sm:py-0">
+    <div className="w-full h-full flex justify-center items-center flex-col">
+      <div className="px-3">
+        <div className=" rounded-2xl border-2 bg-black/70 border-neutral-500 relative w-full h-full max-w-lg">
+          <div className=" text-neutral-300 text-xl font-bold tracking-wide p-3">
+            <h3>Lorem ipsum dolor sit amet</h3>
+          </div>
+          <div className="p-3 text-neutral-400">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.{" "}
+            </p>
+          </div>
+        </div>
+      </div>
+      <ul className="flex flex-wrap justify-center w-full h-full py-6">
         {/* Dragon Card */}
         <Link href="/Dragons">
           <motion.li

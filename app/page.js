@@ -57,8 +57,8 @@ export default function Home() {
       </div>
       {/* Small Image And Overlay End */}
       {/* Content Small */}
-      <div className="absolute h-auto pt-12  text-start w-full px-4 pb-4 sm:hidden flex">
-        <div className="text-neutral-200 sm:text-neutral-300 sm:opacity-100 sm:text-6xl text-4xl font-bold">
+      <div className="absolute h-fit pt-12  text-start w-full px-4 pb-96 sm:hidden flex">
+        <div className="text-neutral-300 sm:opacity-100 sm:text-6xl text-4xl font-bold">
           {/* 1st Part Heading */}
           <div className="max-w-xs">
             <h1 className={cinzel.className}>
@@ -68,10 +68,16 @@ export default function Home() {
           <FloatingBubbles />
           {/* Floating Buttons */}
           {/* 2nd Part Heading */}
-          <div className="mt-8 text-emerald-500">
-            <h2 className={cinzel.className}>Welsh Mythology</h2>
+          <div className="w-full text- absolute text-end text- -left-4 top-64 text-emerald-200">
+            <h2 className={cinzel.className}>
+              Welsh
+              <br></br>
+              Mythology
+            </h2>
           </div>
-          <FloatingButtonDiv />
+          <div className="absolute top-80 right-80">
+            <FloatingButtonDiv />
+          </div>
         </div>
       </div>
       {/* Content Container Large */}
@@ -85,8 +91,10 @@ export default function Home() {
           </div>
           {/* Floating Buttons */}
           {/* 2nd Part Heading */}
-          <div className="mt-52 sm:mt-0 text-emerald-700">
-            <h2 className={cinzel.className}>Welsh Mythology</h2>
+          <div className="mt-0 text-emerald-600">
+            <h2 className={cinzel.className}>
+              Welsh<br></br> Mythology
+            </h2>
           </div>
         </div>
       </div>

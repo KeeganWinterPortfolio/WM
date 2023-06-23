@@ -165,7 +165,7 @@ function FloatingBubbles() {
           style={{
             boxShadow: "0px 0px 12px #10b981",
           }}
-          className=" w-4 h-4 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-40 left-60 shadow text-black"
+          className=" w-4 h-4 rounded-full absolute bg-gradient-to-tr from-emerald-800 via-green-400 to-emerald-900 top-24 left-60 shadow text-black"
         ></motion.div>
       </motion.div>
     </div>

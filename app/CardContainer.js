@@ -11,8 +11,22 @@ import { motion } from "framer-motion";
 
 function CardContainer() {
   return (
-    <div className="w-full h-full flex justify-center items-center">
-      <ul className="flex flex-wrap justify-center w-full h-full py-20 sm:py-0">
+    <div className="w-full h-full flex justify-center items-center flex-col">
+      <div className="px-3">
+        <div className=" rounded-2xl border-2 bg-black/70 border-neutral-500 relative w-full h-full max-w-lg">
+          <div className=" text-neutral-300 text-xl font-bold tracking-wide p-3">
+            <h3>Choose A Creature</h3>
+          </div>
+          <div className="p-3 text-neutral-400">
+            <p>
+              Immerse yourself in the ancient lore of Wales, where mythical
+              creatures roam and the boundaries between our world and the
+              Otherworld blur.{" "}
+            </p>
+          </div>
+        </div>
+      </div>
+      <ul className="flex flex-wrap justify-center w-full h-full py-6 sm:py-0">
         {/* Dragon Card */}
         <Link href="/Dragons">
           <motion.li
