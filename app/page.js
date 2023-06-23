@@ -6,8 +6,9 @@ import { Sora } from "next/font/google";
 import FloatingButtonDiv from "./FloatingButtonDiv";
 import FloatingBubbles from "./FloatingBubbles";
 import CardContainer from "./CardContainer";
+import { Cinzel } from "next/font/google";
 
-const sora = Sora({ subsets: ["latin"], weight: ["800"] });
+const cinzel = Cinzel({ subsets: ["latin"], weight: ["800"] });
 
 export default function Home() {
   return (
@@ -59,15 +60,15 @@ export default function Home() {
         <div className="text-neutral-200 sm:text-neutral-300 sm:opacity-100 sm:text-6xl text-4xl font-bold">
           {/* 1st Part Heading */}
           <div className="max-w-xs">
-            <h1 className={sora.className}>
+            <h1 className={cinzel.className}>
               Discover<br></br> The World of{" "}
             </h1>
           </div>
           <FloatingBubbles />
           {/* Floating Buttons */}
           {/* 2nd Part Heading */}
-          <div className="mt-10 text-emerald-700">
-            <h2 className={sora.className}>Welsh Mythology</h2>
+          <div className="mt-10 text-emerald-500">
+            <h2 className={cinzel.className}>Welsh Mythology</h2>
           </div>
           <FloatingButtonDiv />
         </div>
@@ -77,14 +78,14 @@ export default function Home() {
         <div className="text-neutral-200 sm:text-neutral-300 sm:opacity-100 sm:text-6xl text-4xl font-bold">
           {/* 1st Part Heading */}
           <div className="max-w-md ">
-            <h1 className={sora.className}>
+            <h1 className={cinzel.className}>
               Discover<br></br> The World of{" "}
             </h1>
           </div>
           {/* Floating Buttons */}
           {/* 2nd Part Heading */}
           <div className="mt-52 sm:mt-0 text-emerald-700">
-            <h2 className={sora.className}>Welsh Mythology</h2>
+            <h2 className={cinzel.className}>Welsh Mythology</h2>
           </div>
         </div>
       </div>

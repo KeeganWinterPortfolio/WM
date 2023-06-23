@@ -2,6 +2,9 @@ import MainImageWM from "../../public/images/MainImageWM.png";
 import MainImageWMLarge from "../../public/images/MainImageWMLarge.png";
 import MainImageWMMedium from "../../public/images/MainImageWMMedium.png";
 import Image from "next/image";
+import { Cinzel } from "next/font/google";
+
+const cinzel = Cinzel({ subsets: ["latin"], weight: ["800"] });
 
 export default function Home() {
   return (
@@ -48,7 +51,39 @@ export default function Home() {
         </div>
       </div>
       {/* Small Image And Overlay End */}
-      <h1>About</h1>
+
+      {/* Content Small */}
+      <div className="absolute h-auto pt-12  text-start w-full px-4 pb-4 sm:hidden flex">
+        <div className="text-neutral-200 sm:text-neutral-300 sm:opacity-100 sm:text-6xl text-4xl font-bold">
+          {/* 1st Part Heading */}
+          <div className="max-w-xs">
+            <h1 className={cinzel.className}>
+              Discover<br></br> The World of{" "}
+            </h1>
+          </div>
+          {/* Floating Buttons */}
+          {/* 2nd Part Heading */}
+          <div className="text-emerald-500">
+            <h2 className={cinzel.className}>Welsh Mythology</h2>
+          </div>
+        </div>
+      </div>
+      {/* Content Container Large */}
+      <div className="absolute h-auto pt-12  text-start w-full px-4 pb-4 hidden sm:flex">
+        <div className="text-neutral-200 sm:text-neutral-300 sm:opacity-100 sm:text-6xl text-4xl font-bold">
+          {/* 1st Part Heading */}
+          <div className="max-w-md ">
+            <h1 className={cinzel.className}>
+              Discover<br></br> The World of{" "}
+            </h1>
+          </div>
+          {/* Floating Buttons */}
+          {/* 2nd Part Heading */}
+          <div className="mt-0 text-emerald-700">
+            <h2 className={cinzel.className}>Welsh Mythology</h2>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

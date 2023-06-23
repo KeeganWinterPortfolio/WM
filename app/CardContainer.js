@@ -3,6 +3,9 @@
 import React from "react";
 import Image from "next/image";
 import MainImageWMDragonCard from "../public/images/MainImageWMDragonCard.png";
+import MainImageWMBeastCard from "../public/images/MainImageWMBeastCard.png";
+import MainImageWMSpiritCard from "../public/images/MainImageWMSpiritCard.png";
+import MainImageWMFairyCard from "../public/images/MainImageWMFairyCard.png";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -31,14 +34,16 @@ function CardContainer() {
               width={4000}
               height={4800}
               alt=""
-              className="w-full max-w-sm rounded-3xl"
+              className="w-full max-w-sm rounded-3xl border-2 border-emerald-800"
             />
             <div className="w-full h-full p-3 absolute">
               <div className="w-full h-full bg-black opacity-30 rounded-3xl"></div>
             </div>
-            <div className="absolute max-w-sm bottom-6 rounded-3xl backdrop-blur-sm bg-white/10 p-3 mx-6 z-20 border-2 border-neutral-300">
-              <h1 className="text-xl mb-6">Lorem ipsum dolor sit amet,</h1>
-              <p className="">
+            <div className="absolute max-w-sm bottom-6 rounded-2xl bg-black/70 p-3 mx-6 z-20 border-2 border-neutral-500">
+              <h1 className="text-emerald-400 text-2xl mb-6 font-bold tracking-wide">
+                Dragons
+              </h1>
+              <p className=" text-neutral-300">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
               </p>
@@ -57,23 +62,25 @@ function CardContainer() {
               damping: 6,
               stiffness: 90,
               restDelta: 0.001,
-              delay: 0.2,
+              delay: 0.1,
             }}
-            className="relative max-w-sm p-3 flex justify-center items-center"
+            className="relative max-w-sm p-3 flex justify-center items-center shrink-0"
           >
             <Image
-              src={MainImageWMDragonCard}
+              src={MainImageWMBeastCard}
               width={4000}
               height={4800}
               alt=""
-              className="w-full max-w-sm rounded-3xl"
+              className="w-full max-w-sm rounded-3xl border-2 border-emerald-800"
             />
             <div className="w-full h-full p-3 absolute">
               <div className="w-full h-full bg-black opacity-30 rounded-3xl"></div>
             </div>
-            <div className="absolute max-w-sm bottom-6 rounded-3xl backdrop-blur-sm bg-white/10 p-3 mx-6 z-20 border-2 border-neutral-300">
-              <h1 className="text-xl mb-6">Lorem ipsum dolor sit amet,</h1>
-              <p className="">
+            <div className="absolute max-w-sm bottom-6 rounded-2xl bg-black/70 p-3 mx-6 z-20 border-2 border-neutral-500">
+              <h1 className="text-emerald-400 text-2xl mb-6 font-bold tracking-wide">
+                Beasts
+              </h1>
+              <p className=" text-neutral-300">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
               </p>
@@ -92,23 +99,25 @@ function CardContainer() {
               damping: 6,
               stiffness: 90,
               restDelta: 0.001,
-              delay: 0.3,
+              delay: 0.1,
             }}
-            className="relative max-w-sm p-3 flex justify-center items-center"
+            className="relative max-w-sm p-3 flex justify-center items-center shrink-0"
           >
             <Image
-              src={MainImageWMDragonCard}
+              src={MainImageWMSpiritCard}
               width={4000}
               height={4800}
               alt=""
-              className="w-full max-w-sm rounded-3xl"
+              className="w-full max-w-sm rounded-3xl border-2 border-emerald-800"
             />
             <div className="w-full h-full p-3 absolute">
               <div className="w-full h-full bg-black opacity-30 rounded-3xl"></div>
             </div>
-            <div className="absolute max-w-sm bottom-6 rounded-3xl backdrop-blur-sm bg-white/10 p-3 mx-6 z-20 border-2 border-neutral-300">
-              <h1 className="text-xl mb-6">Lorem ipsum dolor sit amet,</h1>
-              <p className="">
+            <div className="absolute max-w-sm bottom-6 rounded-2xl bg-black/70 p-3 mx-6 z-20 border-2 border-neutral-500">
+              <h1 className="text-emerald-400 text-2xl mb-6 font-bold tracking-wide">
+                Spirits And Ghosts
+              </h1>
+              <p className=" text-neutral-300">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
               </p>
@@ -127,23 +136,25 @@ function CardContainer() {
               damping: 6,
               stiffness: 90,
               restDelta: 0.001,
-              delay: 0.3,
+              delay: 0.1,
             }}
-            className="relative max-w-sm p-3 flex justify-center items-center"
+            className="relative max-w-sm p-3 flex justify-center items-center shrink-0"
           >
             <Image
-              src={MainImageWMDragonCard}
+              src={MainImageWMFairyCard}
               width={4000}
               height={4800}
               alt=""
-              className="w-full max-w-sm rounded-3xl"
+              className="w-full max-w-sm rounded-3xl border-2 border-emerald-800"
             />
             <div className="w-full h-full p-3 absolute">
               <div className="w-full h-full bg-black opacity-30 rounded-3xl"></div>
             </div>
-            <div className="absolute max-w-sm bottom-6 rounded-3xl backdrop-blur-sm bg-white/10 p-3 mx-6 z-20 border-2 border-neutral-300">
-              <h1 className="text-xl mb-6">Lorem ipsum dolor sit amet,</h1>
-              <p className="">
+            <div className="absolute max-w-sm bottom-6 rounded-2xl bg-black/70 p-3 mx-6 z-20 border-2 border-neutral-500">
+              <h1 className="text-emerald-400 text-2xl mb-6 font-bold tracking-wide">
+                Fairies
+              </h1>
+              <p className=" text-neutral-300">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
               </p>
