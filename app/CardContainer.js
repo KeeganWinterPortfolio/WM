@@ -12,8 +12,6 @@ function CardContainer() {
           <li className="relative max-w-sm p-3 flex justify-center items-center shrink-0">
             <Image
               src={MainImageWMDragonCard}
-              width={4000}
-              height={4800}
               alt=""
               className="w-full max-w-sm rounded-3xl"
             />
@@ -34,8 +32,6 @@ function CardContainer() {
           <li className="relative max-w-sm p-3 flex justify-center items-center">
             <Image
               src={MainImageWMDragonCard}
-              width={4000}
-              height={4800}
               alt=""
               className="w-full max-w-sm rounded-3xl"
             />
@@ -56,8 +52,6 @@ function CardContainer() {
           <li className="relative max-w-sm p-3 flex justify-center items-center">
             <Image
               src={MainImageWMDragonCard}
-              width={4000}
-              height={4800}
               alt=""
               className="w-full max-w-sm rounded-3xl"
             />
@@ -78,8 +72,6 @@ function CardContainer() {
           <li className="relative max-w-sm p-3 flex justify-center items-center">
             <Image
               src={MainImageWMDragonCard}
-              width={4000}
-              height={4800}
               alt=""
               className="w-full max-w-sm rounded-3xl"
             />
