@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 function CardContainer() {
   return (
     <div className="w-full h-full flex justify-center items-center">
-      <ul className="flex flex-wrap justify-center w-full h-full px-2 py-2">
+      <ul className="flex flex-wrap justify-center w-full h-full py-20 sm:py-0">
         {/* Dragon Card */}
         <Link href="/Dragons">
           <motion.li

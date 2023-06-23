@@ -9,6 +9,7 @@ import CardContainer from "./CardContainer";
 import { Cinzel } from "next/font/google";
 
 const cinzel = Cinzel({ subsets: ["latin"], weight: ["800"] });
+const sora = Sora({ subsets: ["latin"], weight: ["800"] });
 
 export default function Home() {
   return (
@@ -67,7 +68,7 @@ export default function Home() {
           <FloatingBubbles />
           {/* Floating Buttons */}
           {/* 2nd Part Heading */}
-          <div className="mt-10 text-emerald-500">
+          <div className="mt-8 text-emerald-500">
             <h2 className={cinzel.className}>Welsh Mythology</h2>
           </div>
           <FloatingButtonDiv />
