@@ -127,12 +127,14 @@ function CardContainer() {
               damping: 6,
               stiffness: 90,
               restDelta: 0.001,
-              delay: 0.4,
+              delay: 0.3,
             }}
             className="relative max-w-sm p-3 flex justify-center items-center"
           >
             <Image
               src={MainImageWMDragonCard}
+              width={4000}
+              height={4800}
               alt=""
               className="w-full max-w-sm rounded-3xl"
             />
