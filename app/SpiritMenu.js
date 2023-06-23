@@ -28,7 +28,7 @@ export default function SpiritMenu() {
       <div className="mx-auto">
         <div className="mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight text-neutral-300 sm:text-4xl">
-            Dragons
+            Spirits
           </h2>
           <p className="mt-2 mb-3 text-lg leading-8 text-neutral-400">
             Illo sint voluptas. Error voluptates culpa eligendi.
