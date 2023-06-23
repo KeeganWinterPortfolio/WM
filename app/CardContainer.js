@@ -1,7 +1,10 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import MainImageWMDragonCard from "../public/images/MainImageWMDragonCard.png";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 function CardContainer() {
   return (
@@ -9,9 +12,24 @@ function CardContainer() {
       <ul className="flex flex-wrap justify-center w-full h-full px-2 py-2">
         {/* Dragon Card */}
         <Link href="/Dragons">
-          <li className="relative max-w-sm p-3 flex justify-center items-center shrink-0">
+          <motion.li
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.3,
+              ease: [0, 0.71, 0.2, 1.01],
+              type: "spring",
+              damping: 6,
+              stiffness: 90,
+              restDelta: 0.001,
+              delay: 0.1,
+            }}
+            className="relative max-w-sm p-3 flex justify-center items-center shrink-0"
+          >
             <Image
               src={MainImageWMDragonCard}
+              width={4000}
+              height={4800}
               alt=""
               className="w-full max-w-sm rounded-3xl"
             />
@@ -25,13 +43,28 @@ function CardContainer() {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
               </p>
             </div>
-          </li>
+          </motion.li>
         </Link>
         {/* Beast Card */}
         <Link href="/Beasts">
-          <li className="relative max-w-sm p-3 flex justify-center items-center">
+          <motion.li
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.3,
+              ease: [0, 0.71, 0.2, 1.01],
+              type: "spring",
+              damping: 6,
+              stiffness: 90,
+              restDelta: 0.001,
+              delay: 0.2,
+            }}
+            className="relative max-w-sm p-3 flex justify-center items-center"
+          >
             <Image
               src={MainImageWMDragonCard}
+              width={4000}
+              height={4800}
               alt=""
               className="w-full max-w-sm rounded-3xl"
             />
@@ -45,13 +78,28 @@ function CardContainer() {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
               </p>
             </div>
-          </li>
+          </motion.li>
         </Link>
         {/* Spirit Card */}
         <Link href="/Spirits">
-          <li className="relative max-w-sm p-3 flex justify-center items-center">
+          <motion.li
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.3,
+              ease: [0, 0.71, 0.2, 1.01],
+              type: "spring",
+              damping: 6,
+              stiffness: 90,
+              restDelta: 0.001,
+              delay: 0.3,
+            }}
+            className="relative max-w-sm p-3 flex justify-center items-center"
+          >
             <Image
               src={MainImageWMDragonCard}
+              width={4000}
+              height={4800}
               alt=""
               className="w-full max-w-sm rounded-3xl"
             />
@@ -65,11 +113,24 @@ function CardContainer() {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
               </p>
             </div>
-          </li>
+          </motion.li>
         </Link>
         {/* Fairy Card */}
         <Link href="/Fairies">
-          <li className="relative max-w-sm p-3 flex justify-center items-center">
+          <motion.li
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.3,
+              ease: [0, 0.71, 0.2, 1.01],
+              type: "spring",
+              damping: 6,
+              stiffness: 90,
+              restDelta: 0.001,
+              delay: 0.4,
+            }}
+            className="relative max-w-sm p-3 flex justify-center items-center"
+          >
             <Image
               src={MainImageWMDragonCard}
               alt=""
@@ -85,7 +146,7 @@ function CardContainer() {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
               </p>
             </div>
-          </li>
+          </motion.li>
         </Link>
       </ul>
     </div>
