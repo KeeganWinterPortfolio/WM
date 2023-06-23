@@ -340,7 +340,7 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
               layout
-              className="w-full h-full absolute overflow-y-scroll overflow-x-hidden flex justify-end scrollbar-track-emerald-900 scrollbar-thumb-emerald-600"
+              className="w-full h-full absolute flex justify-end "
             >
               {dragonMenu && <DragonMenu />}
               {beastMenu && <BeastMenu />}
