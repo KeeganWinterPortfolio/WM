@@ -67,19 +67,6 @@ export default function Home() {
             <h2 className={cinzel.className}>Welsh Mythology</h2>
           </div>
         </div>
-        <div className="mt-40 rounded-2xl border-2 bg-black/50 border-neutral-500 relative w-full h-full">
-          <div className=" text-neutral-300 text-xl font-bold tracking-wide p-3">
-            <h3>Lorem ipsum dolor sit amet</h3>
-          </div>
-          <div className="p-3 text-neutral-400">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.{" "}
-            </p>
-          </div>
-        </div>
       </div>
       {/* Content Container Large */}
       <div className="absolute h-auto pt-12  text-start w-full px-4 pb-4 hidden sm:flex">
