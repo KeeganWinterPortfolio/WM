@@ -316,8 +316,8 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
         {extendedMenu && (
           <motion.div
             layout
-            style={{ left: "138px" }}
-            className="absolute z-20 max-w-xl w-1/2 sm:w-2:3 h-full top-12"
+            style={{ left: "135px" }}
+            className="absolute z-40 max-w-xl w-1/2 sm:w-2:3 h-full top-12"
           >
             {/* Overlay */}
             <motion.div
