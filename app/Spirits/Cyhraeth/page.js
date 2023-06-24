@@ -59,13 +59,13 @@ export default function Home() {
         <div className="text-neutral-300 sm:opacity-100 sm:text-6xl text-4xl font-bold">
           {/* 1st Part Heading */}
           <div className="max-w-xs">
-            <h1 className={cinzel.className}>Draig Goch</h1>
+            <h1 className={cinzel.className}>Cyraeth</h1>
           </div>
           <FloatingBubbles />
           {/* Floating Buttons */}
           {/* 2nd Part Heading */}
           <div className="w-full text- absolute text-end text- -left-4 top-64 text-emerald-200">
-            <h2 className={cinzel.className}>The Red Dragon</h2>
+            <h2 className={cinzel.className}>The Banshee</h2>
           </div>
           <div className="absolute top-80 right-80">
             <FloatingButtonDiv />
@@ -77,12 +77,12 @@ export default function Home() {
         <div className="text-neutral-200 sm:text-neutral-300 sm:opacity-100 sm:text-6xl text-4xl font-bold">
           {/* 1st Part Heading */}
           <div className="max-w-md ">
-            <h1 className={cinzel.className}>Draig Goch</h1>
+            <h1 className={cinzel.className}>Cyraeth</h1>
           </div>
           {/* Floating Buttons */}
           {/* 2nd Part Heading */}
           <div className="mt-0 text-emerald-600">
-            <h2 className={cinzel.className}>The Red Dragon</h2>
+            <h2 className={cinzel.className}>The Banshee</h2>
           </div>
         </div>
       </div>

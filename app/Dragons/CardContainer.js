@@ -27,7 +27,7 @@ function CardContainer() {
       </div>
       <ul className="flex flex-wrap justify-center w-full h-full py-6">
         {/* The Red Dragon Card */}
-        <Link href="/Dragons">
+        <Link href="/Dragons/TheRedDragon">
           <motion.li
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -64,7 +64,7 @@ function CardContainer() {
           </motion.li>
         </Link>
         {/* Afanc Card */}
-        <Link href="/Beasts">
+        <Link href="/Dragons/Afanc">
           <motion.li
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
