@@ -1,4 +1,4 @@
-import NavBar from "./NavBar";
+
 
 import { Cardo } from "next/font/google";
 
@@ -16,7 +16,7 @@ export default function SpiritsLayout({ children }) {
       className="relative overflow-x-hidden overflow-y-scroll scrollbar-none"
     >
       <div style={{ background: "#000000" }} className={cardo.className}>
-        <NavBar />
+        
         <div className="w-screen h-full">{children}</div>
       </div>
     </div>

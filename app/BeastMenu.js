@@ -1,60 +1,131 @@
 import react from "react";
 import Image from "next/image";
-import MainImageWMMedium from "../public/images/MainImageWMMedium.png";
+import ExtendedMenuPaleBoar from "../public/images/ExtendedMenuPaleBoar.png";
+import ExtendedMenuWaterHorse from "../public/images/ExtendedMenuWaterHorse.png";
+import Link from "next/link";
 
 const posts = [
   {
     id: 1,
-    title: "Title Of Dragon Article",
-    href: "#",
+    title: "Ceffyl Dwr",
+    href: "/Beasts/CeffylDwr",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde.",
-    imageUrl: MainImageWMMedium,
+      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
+    imageUrl: ExtendedMenuWaterHorse,
+    date: "June 24, 2023",
+    datetime: "2023-06-24",
+    category: { title: "Beasts", href: "/Beasts/CeffylDwr" },
+    author: {
+      name: "Keegan",
+      role: "Article Author",
+      href: "/Beasts/CeffylDwr",
+      imageUrl:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
   },
   {
-    id: 1,
-    title: "Title Of Dragon Article",
-    href: "#",
+    id: 2,
+    title: "Twrch Trwyth",
+    href: "/Beasts/TrwythsBoar",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde.",
-    imageUrl: MainImageWMMedium,
+      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.",
+    imageUrl: ExtendedMenuPaleBoar,
+    date: "June 24, 2023",
+    datetime: "2023-06-24",
+    category: { title: "Beasts", href: "/Beasts/TrwythsBoar" },
+    author: {
+      name: "Keegan",
+      role: "Article Author",
+      href: "/Beasts/TrwythsBoar",
+      imageUrl:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
   },
   // More posts...
 ];
 
 export default function BeastMenu() {
   return (
-    <div className="w-full mx-4 pt-6">
-      <div className="mx-auto">
-        <div className="mx-auto text-center">
+    <div className="py-10 sm:py-16">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:max-w-4xl">
           <h2 className="text-3xl font-bold tracking-tight text-neutral-300 sm:text-4xl">
             Beasts
           </h2>
-          <p className="mt-2 mb-3 text-lg leading-8 text-neutral-400">
-            Illo sint voluptas. Error voluptates culpa eligendi.
+          <p className="mt-2 text-lg leading-8 text-neutral-400">
+            Learn about the rich history of beasts in welsh myth.
           </p>
-        </div>
-        <div className="mx-auto space-y-6 pb-6">
-          {posts.map((post) => (
-            <article
-              key={post.id}
-              className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-emerald-950 pb-3 border-emerald-700 border-2 "
-            >
-              <Image
-                src={post.imageUrl}
-                width={1000}
-                height={300}
-                alt=""
-                className="w-full rounded-2xl"
-              />
-
-              <h3 className="mt-3 mx-2 text-lg font-semibold leading-6 text-emerald-500">
-                <span className="absolute inset-0" />
-                {post.title}
-              </h3>
-              <p className="mt-3 mx-2 text-emerald-600">{post.description}</p>
-            </article>
-          ))}
+          <Link href="/Fairies">
+            <button className="rounded-lg mt-3 w-full px-3 py-1 bg-emerald-500 hover:bg-emerald-400 text-black text-center font-bold">
+              Browse Articles
+            </button>
+          </Link>
+          <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
+            {posts.map((post) => (
+              <article
+                key={post.id}
+                className="relative isolate flex flex-col gap-8 lg:flex-row"
+              >
+                <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
+                  <Image
+                    width={500}
+                    height={500}
+                    src={post.imageUrl}
+                    alt=""
+                    className="absolute inset-0 h-full w-full rounded-2xl bg-neutral-50 object-cover"
+                  />
+                  <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-neutral-900/10" />
+                </div>
+                <div>
+                  <div className="flex items-center gap-x-4 text-xs">
+                    <time dateTime={post.datetime} className="text-neutral-300">
+                      {post.date}
+                    </time>
+                    <a
+                      href={post.category.href}
+                      className="relative z-10 rounded-full bg-emerald-500 px-3 py-1.5 font-bold hover:bg-emerald-400 text-black"
+                    >
+                      {post.category.title}
+                    </a>
+                  </div>
+                  <div className="group relative max-w-xl">
+                    <h3 className="mt-3 text-lg font-semibold leading-6 text-neutral-300">
+                      <a href={post.href}>
+                        <span className="absolute inset-0" />
+                        {post.title}
+                      </a>
+                    </h3>
+                    <p className="mt-5 text-sm leading-6 text-neutral-400">
+                      {post.description}
+                    </p>
+                  </div>
+                  <div className="mt-6 flex flex-col border-t border-neutral-500 pt-6">
+                    <div className="relative flex items-center gap-x-4">
+                      <img
+                        src={post.author.imageUrl}
+                        alt=""
+                        className="h-10 w-10 rounded-full bg-neutral-50"
+                      />
+                      <div className="text-sm leading-6">
+                        <p className="font-semibold text-neutral-300">
+                          <a href={post.author.href}>
+                            <span className="absolute inset-0" />
+                            {post.author.name}
+                          </a>
+                        </p>
+                        <p className="text-neutral-400">{post.author.role}</p>
+                      </div>
+                    </div>
+                    <Link href={post.href}>
+                      <button className="rounded-lg mt-3 w-full px-3 py-1 bg-emerald-500 hover:bg-emerald-400 text-black text-center font-bold">
+                        Go To Article
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </div>
