@@ -44,7 +44,7 @@ export default function Home() {
           {/* Image */}
           <Image src={MainImageWMBeast} alt="" className="mt-6" />
           {/* Left Border Black Gradient */}
-          <div className="w-full h-full absolute  top-0 bg-black opacity-10"></div>
+          <div className="w-full h-full absolute  top-0 bg-black opacity-60"></div>
           {/* Left Border Black Gradient */}
           <div className="w-1/4 h-full absolute left-0 top-0 bg-gradient-to-r from-black"></div>
           {/* Bottom Border Black Gradient */}
@@ -54,7 +54,7 @@ export default function Home() {
       {/* Small Image And Overlay End */}
       {/* Content Small */}
       <div className="absolute h-auto pt-12  text-start w-full px-4 pb-4 sm:hidden flex flex-col">
-        <div className="text-neutral-200 sm:text-neutral-300 sm:opacity-100 sm:text-6xl text-4xl font-bold">
+        <div className="text-neutral-200 sm:opacity-100 sm:text-6xl text-4xl font-bold">
           {/* 1st Part Heading */}
           <div className="max-w-xs">
             <h1 className={cinzel.className}>
@@ -63,7 +63,7 @@ export default function Home() {
           </div>
           {/* Floating Buttons */}
           {/* 2nd Part Heading */}
-          <div className="text-emerald-200 mt-16">
+          <div className="text-neutral-200">
             <h2 className={cinzel.className}>Welsh Mythology</h2>
           </div>
         </div>

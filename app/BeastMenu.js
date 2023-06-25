@@ -52,7 +52,7 @@ export default function BeastMenu() {
           <h2 className="text-3xl font-bold tracking-tight text-neutral-300 sm:text-4xl">
             Beasts
           </h2>
-          <p className="mt-2 text-lg leading-8 text-neutral-400">
+          <p className="mt-2 text-lg leading-8 text-neutral-300">
             Learn about the rich history of beasts in welsh myth.
           </p>
           <Link href="/Fairies">
@@ -72,7 +72,7 @@ export default function BeastMenu() {
                     height={500}
                     src={post.imageUrl}
                     alt=""
-                    className="absolute inset-0 h-full w-full rounded-2xl bg-neutral-50 object-cover"
+                    className="absolute border-2 border-neutral-700 inset-0 h-full w-full rounded-2xl bg-neutral-50 object-cover"
                   />
                   <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-neutral-900/10" />
                 </div>

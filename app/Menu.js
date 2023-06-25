@@ -316,7 +316,7 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
         {extendedMenu && (
           <motion.div
             layout
-            style={{ left: "135px" }}
+            style={{ left: "134px" }}
             className="absolute z-40 max-w-xl w-1/2 sm:w-2:3 h-full top-12"
           >
             {/* Overlay */}
@@ -340,7 +340,7 @@ export default function Menu({ mainMenu, mainMenuToggle }) {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
               layout
-              className="w-full h-full absolute flex justify-end "
+              className="w-full h-full absolute flex justify-end"
             >
               {dragonMenu && <DragonMenu />}
               {beastMenu && <BeastMenu />}
